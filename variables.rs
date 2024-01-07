@@ -18,9 +18,15 @@ fn main(){
     println!("{}", num);
     println!("{}", character);
     println!("{}", result);
-    // custom fn
-    print();  
-}
-fn print(){
 
+    // custom fn
+    let temp1 = 32;
+    let x = print(temp1);  
+    println!("{:?}", x); // displaying return type 
 }
+
+// args must be annoted with type // "->" after this we tell the return type
+fn print(temp1: i32) -> (){
+    println!("{}", temp1);
+}
+// no statement ending without semicolon so it'll return "unit data type()"

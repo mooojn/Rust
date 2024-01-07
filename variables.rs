@@ -3,7 +3,7 @@ fn main(){
    
     let character;           
     character = 'M'; // compiler infers the type at first initialization
-// character = 's'; // immutable can't change
+    // character = 's'; // immutable can't change
    
     let result: bool = { // we can assign a result of a block during assignment 
         if num > 8{
@@ -36,7 +36,7 @@ fn print(temp1: i32) -> (){
 // no statement ending without semicolon so it'll return "unit data type()"
 }
 
-// fn to add to nums   ;) 
+// fn to add to nums 
 fn sum(num1: i32, num2: i32) -> i32{
     let res: i32 = num1 + num2; // can't return assignment
     res                        // so returning on next line

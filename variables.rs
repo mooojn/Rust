@@ -33,8 +33,8 @@ fn main(){
 // args must be annoted with type // "->" after this we tell the return type
 fn print(temp1: i32) -> (){
     println!("output from custom print: {}", temp1);
-}
 // no statement ending without semicolon so it'll return "unit data type()"
+}
 
 // fn to add to nums   ;) 
 fn sum(num1: i32, num2: i32) -> i32{

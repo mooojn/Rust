@@ -2,7 +2,7 @@ fn main(){
     let num: i32 = 8;
    
     let character;           
-    character = 'm'; // compiler infers the type at first initialization
+    character = 'M'; // compiler infers the type at first initialization
 // character = 's'; // immutable can't change
    
     let result: bool = { // we can assign a result of a block during assignment 
@@ -16,12 +16,12 @@ fn main(){
     };
 
     // ouput of vars
-    println!("{} {} {}", num, character, result);
+    println!("intger: {}\ncharacter: {}\nboolean: {}", num, character, result);
 
     // custom fn
     let temp1 = 32;
     let x = print(temp1);  
-    println!("{:?}", x); // displaying return type 
+    println!("unit data type: {:?}", x); // displaying return type 
 
     // sum of two nums
     let n1: i32 = 6;
@@ -32,7 +32,7 @@ fn main(){
 
 // args must be annoted with type // "->" after this we tell the return type
 fn print(temp1: i32) -> (){
-    println!("{}", temp1);
+    println!("output from custom print: {}", temp1);
 }
 // no statement ending without semicolon so it'll return "unit data type()"
 
